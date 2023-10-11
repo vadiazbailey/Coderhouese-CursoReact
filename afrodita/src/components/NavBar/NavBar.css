@@ -1,0 +1,45 @@
+.navBar {
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-between;
+    align-items: center;
+    height: 25vh;
+    padding: 0% 4% 0% 4%;
+    /* background: linear-gradient(to bottom, #d3b186, #f0ebde 20%, #f0ebde 30%); */
+}
+
+
+.navMenu{
+    width: 33vw;
+    display: flex;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+
+.navLogo{
+    width: 33vw;
+    display: flex;
+    justify-content: center;
+}
+
+.navRight{
+    width: 33vw;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.navSearch {
+    margin-inline-end: 3vw;
+    cursor: pointer;
+}
+
+img {
+    width: 25vh;
+}
+
+.navIcon {
+    color: hsl(11deg 77.2% 15.2%);
+    font-size: 23px;
+    cursor: pointer;
+}

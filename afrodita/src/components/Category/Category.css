@@ -1,0 +1,39 @@
+.category{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: space-evenly;
+    /* border-top: 2px solid brown;  */
+    background: linear-gradient(to bottom, #b7994a61 0%, transparent 12%);
+    padding-top: 1%; 
+}
+
+
+.category-link {
+    text-decoration: none; /* Quita la decoración de enlace (subrayado) */
+    color: rgba(118, 53, 53, 0.553); 
+    transition: 0.3s; /* Transición suave para el sombreado */
+    display: flex; 
+    align-items: center; 
+    justify-content: center;
+    padding: 10px 20px; /* Ajusta el relleno para crear un botón */
+    border-radius: 5px; /* Bordes redondeados */
+    transition: 0.3s; /* Transición suave para el sombreado */
+}
+  
+.category-link:hover {
+    background-color: #f0f0f0; 
+    color: #7d2a2aae; 
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Sombra al hacer hover */
+}  
+
+.category-link ul {
+    margin: 0; 
+    padding: 0; 
+    list-style: none; /* Quita los marcadores de lista */
+}
+  
+.category-link ul li {
+    display: flex;
+    justify-content: center; 
+}

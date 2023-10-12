@@ -1,7 +1,8 @@
 import React from 'react';
 import { useState } from 'react';
-import { FaBars, FaShoppingCart, FaSearch } from 'react-icons/fa';
+import { FaBars, FaSearch } from 'react-icons/fa';
 import Category from '../Category/Category';
+import CartWidget from '../CartWidget/CartWidget';
 import Logo from '../../assets/logo.png';
 import '../NavBar/NavBar.css';
 
@@ -51,12 +52,12 @@ function NavBar() {
                     <div className='navSearch'>
                         <FaSearch className='navIcon' /> 
                     </div>
-                    <div className='navCart'>
-                        <FaShoppingCart className='navIcon' />
-                    </div>
+                    <CartWidget />
+                    
                 </div>
             </div>
             {isDropdownOpen && <Category category={categories} />}
+            
         </>
     )
 }

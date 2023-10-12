@@ -12,16 +12,4 @@ code {
     monospace;
 }
 
-.imagenHome {
-  margin-top: 1%;
-}
 
-.imagenHome img {
-  width: 95vw;
-  max-width: 98vw;
-  display: block;
-  margin: 0 auto;
-  height: 70vh;
-  object-fit: cover;
-  box-shadow: 0 0 10px rgba(86, 86, 86, 0.5);
-}

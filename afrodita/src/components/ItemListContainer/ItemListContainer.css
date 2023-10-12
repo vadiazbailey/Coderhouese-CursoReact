@@ -1,0 +1,25 @@
+.imagenHome {
+    margin-top: 1%;
+    position: relative;
+}
+  
+.imagenHome img {
+    width: 95vw;
+    max-width: 98vw;
+    display: block;
+    margin: 0 auto;
+    height: 70vh;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(86, 86, 86, 0.5);
+}
+
+.textoSuperpuesto {
+    position: absolute;
+    top: 55vh; /* Ajusta la posición vertical según tus necesidades */
+    left: 83vw; /* Ajusta la posición horizontal según tus necesidades */
+    background-color: rgba(255, 255, 255, 0.7); /* Agrega un fondo semitransparente */
+    padding: 10px;
+    color: #6d4e4e;
+    font-weight: bold;
+    box-shadow: 0 0 10px hsl(11deg 7.52% 30.9%);
+}

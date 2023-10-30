@@ -1,0 +1,52 @@
+.card {
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    padding: 16px;
+    margin: 16px;
+    max-width: 25vw;
+    text-align: center;
+    background-color: #fff4e794;
+}
+
+.card header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-block-start: 1vh;
+    margin-block-end: 3vh;
+}
+
+.card h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    color: hsl(11deg 77.2% 15.2%);
+}
+
+.card picture img {
+    width: 25vw;
+    height: 45vh;
+    object-fit: fill;
+    box-shadow: 0 0 10px rgba(86, 86, 86, 0.5);
+    align-content: center;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card picture img:hover {
+    transform: scale(1.1);
+    /* Escala la imagen al 110% en el estado hover */
+}
+
+.card p {
+    margin: 8px 0;
+}
+
+.card button {
+    background-color: hsl(11deg 77.2% 15.2%);
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    cursor: pointer;
+}

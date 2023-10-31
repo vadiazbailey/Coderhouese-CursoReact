@@ -1,0 +1,49 @@
+{
+    "productos": [
+        {
+            "id": 1,
+            "name": "Sujetador Encaje Negro",
+            "price": 29.99,
+            "detail": "Sujetador de encaje negro con details florales, con aro y copas acolchadas para mayor comodidad.",
+            "stock": 50,
+            "image": "https://i.blogs.es/f017ef/oysho-sujetador-encaje-negro-02/450_1000.jpeg",
+            "category": "Conjuntos"
+        },
+        {
+            "id": 2,
+            "name": "Tanga de Encaje Roja",
+            "price": 12.99,
+            "detail": "Tanga de encaje roja con un diseño elegante y cómodo.",
+            "stock": 100,
+            "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRDiz1rZDKXnlnTQfX_V1Nu_VixY9jT4HNEng&usqp=CAU",
+            "category": "Conjuntos"
+        },
+        {
+            "id": 3,
+            "name": "Camisón Sedoso Blanco",
+            "price": 39.99,
+            "detail": "Camisón sedoso blanco con encaje en el escote y details de satén.",
+            "stock": 30,
+            "image": "https://m.media-amazon.com/images/I/51exXHE7mTL.jpg",
+            "category": "Pijamas"
+        },
+        {
+            "id": 4,
+            "name": "Sujetador Encaje Blanco",
+            "price": 29.99,
+            "detail": "Sujetador de encaje negro con details florales, con aro y copas acolchadas para mayor comodidad.",
+            "stock": 50,
+            "image": "https://i.blogs.es/f017ef/oysho-sujetador-encaje-negro-02/450_1000.jpeg",
+            "category": "Conjuntos"
+        },
+        {
+            "id": 5,
+            "name": "Camisón Sedoso Negro",
+            "price": 39.99,
+            "detail": "Camisón sedoso blanco con encaje en el escote y details de satén.",
+            "stock": 30,
+            "image": "https://m.media-amazon.com/images/I/51exXHE7mTL.jpg",
+            "category": "Pijamas"
+        }
+    ]
+}

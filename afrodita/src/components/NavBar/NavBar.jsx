@@ -5,6 +5,7 @@ import Category from '../Category/Category';
 import CartWidget from '../CartWidget/CartWidget';
 import Logo from '../../assets/logo.png';
 import '../NavBar/NavBar.css';
+import { Link } from 'react-router-dom';
 
 function NavBar() {
     /**
@@ -46,18 +47,20 @@ function NavBar() {
                     <FaBars className='navIcon' onClick={toggleDropdown} />
                 </div>
                 <div className='navLogo'>
-                    <img src={Logo} alt='Descripción de la imagen' />
+                    <Link to='/'>
+                        <img src={Logo} alt='Descripción de la imagen' />
+                    </Link>
                 </div>
                 <div className='navRight'>
                     <div className='navSearch'>
-                        <FaSearch className='navIcon' /> 
+                        <FaSearch className='navIcon' />
                     </div>
                     <CartWidget />
-                    
+
                 </div>
             </div>
             {isDropdownOpen && <Category category={categories} />}
-            
+
         </>
     )
 }

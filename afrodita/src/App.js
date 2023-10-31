@@ -6,19 +6,10 @@ import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailCont
 import { BrowserRouter, Routes, Route} from 'react-router-dom';
 
 function App() {
-  const [selectedCategory, setSelectedCategory] = useState('');
-
-  const handleCategorySelection = (category) => {
-    console.log('categoryApp', category);
-    setSelectedCategory(category);
-  };
-
-  console.log('selectedCategoryApp', selectedCategory);
-
   return (
     <div className="App">
       <BrowserRouter>
-        <NavBar onSelectedCategoryPadre={handleCategorySelection}/>
+        <NavBar />
         <Routes>
           <Route path="/" element={<ItemListContainer greeting='Bienvenidos a Afrodita' />} />
           <Route path="/category/:category" element={<ItemListContainer greeting='Bienvenidos a Afrodita' />} />

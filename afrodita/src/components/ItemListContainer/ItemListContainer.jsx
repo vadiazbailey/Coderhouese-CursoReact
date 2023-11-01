@@ -13,7 +13,6 @@ function ItemListContainer({ greeting }) {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(false);
   const { category } = useParams();
-  const [isFilter, setIsFilter] = useState(false);
 
   useEffect(() => {
     const getProducts = async () => {
@@ -25,9 +24,7 @@ function ItemListContainer({ greeting }) {
             resolve(category ? productList.filter((p) => p.category === category) : productList);
           }, 2000);
         });
-        if (( productsJson.productos.filter((p) => p.category === category).length) === 0 && category) {
-          setIsFilter(true);
-        }
+  
         console.log('Productos obtenidos', response);
         setProducts(response);
         setLoading(false);
@@ -48,13 +45,11 @@ function ItemListContainer({ greeting }) {
         loading ?
           (<Loading />) :
           (
-            !isFilter ?
             <div className='imagenHome'>
               <img src={Fondo} alt='afrodita' />
               <p className='textoSuperpuesto'>{greeting}</p>
               <ItemList products={products} />
-            </div> : 
-            <Error />
+            </div> 
           )
       }
     </>

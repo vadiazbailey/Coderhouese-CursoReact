@@ -1,0 +1,61 @@
+.item-detail-card {
+    display: flex;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 10px;
+    margin: 10px;
+    background-color: #fff;
+    width: 90vw;
+    height: 60vh;
+}
+
+.item-detail-image {
+    padding: 10px;
+    display: flex;
+    width: 30vw;
+    justify-content: space-around;
+}
+
+.item-detail-image picture {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.item-detail-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 4px;
+}
+
+.item-detail-info {
+    width: 60vw;
+    flex: 1;
+    /* La información ocupa el otro 50% del ancho */
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.item-detail h1 {
+    font-size: 1.5rem;
+    margin: 0;
+}
+
+.item-detail h5 {
+    font-size: 1rem;
+    margin: 0;
+    color: #555;
+}
+
+.item-detail p {
+    font-size: 1rem;
+    margin: 5px 0;
+}
+
+.item-detail-footer {
+    margin-top: 10px;
+}

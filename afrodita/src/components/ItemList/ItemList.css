@@ -1,0 +1,6 @@
+.item-list-container {
+    display: flex;
+    flex-wrap: wrap;
+    margin-block-start: 5vh;
+    justify-content: space-evenly;
+}

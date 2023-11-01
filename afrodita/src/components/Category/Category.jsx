@@ -1,13 +1,14 @@
 import React from 'react';
 import './Category.css';
+import {Link} from 'react-router-dom';
 
 function Category({ category }) {
   return (
     <div className='category'>
         {category.map((c) => (
-            <a key={c.id} href='#' className='category-link'>
+            <Link key={c.id} to={`/category/${c.name}`} className='category-link'>
                 <ul>{c.name}</ul>
-            </a>
+            </Link>
         ))}
     </div>
   )

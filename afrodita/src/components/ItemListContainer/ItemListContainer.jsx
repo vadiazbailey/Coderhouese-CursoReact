@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import ItemList from '../ItemList/ItemList';
-import Error from '../Error/Error';
 
 import './ItemListContainer.css';
 

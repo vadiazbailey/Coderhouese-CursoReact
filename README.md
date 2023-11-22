@@ -1,4 +1,6 @@
 # Curso coderhouse
+El proyecto desarrollado es una e-commerce de lenceria para mujeres llamada Afrodita. En el home se puede ver todos los productos, y en el menu se pueden seleccionar las categorias para ver productos en especifico. Se pueden agregar al cart y se realiza un breve checkout para confirmar las compras, con la validacion de los input.
+
 ## Descripción
 
 Este proyecto utiliza React, una biblioteca de JavaScript para construir interfaces de usuario interactivas. React se basa en la idea de componentes reutilizables y permite el desarrollo de aplicaciones de una manera declarativa y eficiente.

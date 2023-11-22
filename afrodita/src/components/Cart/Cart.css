@@ -1,0 +1,47 @@
+/* En tu archivo CSS (por ejemplo, Cart.css) */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start; 
+    height: 60vh; 
+    max-height: 60vh; /* Establece la altura máxima antes de hacer el carrito scrollable */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical cuando sea necesario */
+    padding: 20px; /* Agrega un espacio interno para mejorar la apariencia */
+  }
+  
+  .cart-item {
+    margin-bottom: 20px; /* Espaciado entre elementos del carrito */
+  }
+  
+  .clear-cart-button,
+  .checkout-link {
+    margin-top: 20px; /* Espaciado superior entre los botones y la parte inferior del carrito */
+  }
+  
+  .empty-cart-icon {
+    font-size: 48px; /* Ajusta el tamaño del icono según sea necesario */
+    color: #6d4e4e; /* Color del icono */
+  }
+  
+  .empty-cart-message {
+    font-size: 18px;
+    margin-top: 10px; /* Espacio superior para separar el icono del mensaje */
+    color: #333; /* Color del mensaje */
+    text-align: center; /* Centra el mensaje */
+  }
+  
+  /* Estilo del enlace */
+  .link-to-home {
+    margin-top: 20px; /* Espacio superior para separar el mensaje del enlace */
+    text-decoration: none;
+    color: #007bff; /* Color del enlace */
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .link-to-home:hover {
+    text-decoration: underline; /* Subraya el enlace al pasar el mouse sobre él */
+  }
+  

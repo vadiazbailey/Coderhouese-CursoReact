@@ -28,7 +28,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                     +
                 </button>
             </div>
-            <div>
+            <div style={{marginLeft: '2%'}}>
                 <button
                     className="add-to-cart-button"
                     onClick={() => onAdd(quantity)}

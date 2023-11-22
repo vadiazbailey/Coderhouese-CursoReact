@@ -38,6 +38,7 @@
     padding: 10px 20px;
     cursor: pointer;
     transition: background-color 0.3s;
+    width: 15vw;
 }
 
 .decrement-button:hover,

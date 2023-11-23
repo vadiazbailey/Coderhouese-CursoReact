@@ -6,6 +6,7 @@ const CheckoutForm = ({ onConfirm }) => {
     const [phone, setPhone] = useState('');
     const [direc, setDirec] = useState('');
     const [email, setEmail] = useState('');
+    const [confirmEmail, setConfirmEmail] = useState('');
     const [error, setError] = useState('');
 
     const handleSubmit = async (e) => {
@@ -15,7 +16,7 @@ const CheckoutForm = ({ onConfirm }) => {
         setError('');
 
         // Validación de campos
-        if (!name || !phone || !direc || !email) {
+        if (!name || !phone || !direc || !email || !confirmEmail) {
             setError('Todos los campos son obligatorios.');
             return;
         }
@@ -40,6 +41,12 @@ const CheckoutForm = ({ onConfirm }) => {
             return;
         }
 
+        // Validación de que el email y el confirmEmail coincidan
+        if (email !== confirmEmail) {
+            setError('Los emails no coinciden.');
+            return;
+        }
+
         const userData = {
             name,
             phone,
@@ -56,7 +63,7 @@ const CheckoutForm = ({ onConfirm }) => {
 
     return (
         <div>
-            {error && <div style={{ color: 'red', marginBottom: '10px', display: 'flex', justifyContent:'center'}}>{error}</div>}
+            {error && <div style={{ color: 'red', marginBottom: '10px', display: 'flex', justifyContent: 'center' }}>{error}</div>}
             <form onSubmit={handleSubmit}>
                 <label>
                     Nombre:
@@ -73,6 +80,10 @@ const CheckoutForm = ({ onConfirm }) => {
                 <label>
                     Email:
                     <input type="text" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} />
+                </label>
+                <label>
+                    Confirmar Email:
+                    <input type="text" placeholder="Confirmar Email" value={confirmEmail} onChange={(e) => setConfirmEmail(e.target.value)} />
                 </label>
                 <button type="submit">Enviar</button>
             </form>

@@ -33,12 +33,15 @@ const Cart = () => {
             {cart.map(item => (
                 <CartItem key={item.id} {...item} removeItem={removeItem} />
             ))}
-            <button className="clear-cart-button" onClick={handleClearCart}>
-                Vaciar carrito
-            </button>
-            <Link to="/checkout" className="checkout-link">
-                Checkout
-            </Link>
+            <div className='detalle'>
+                <h3 className="total-price" style={{ margin: 0 }}> Total: ${cart.reduce((acc, item) => acc + item.price * item.quantity, 0)}</h3>
+                <button className="clear-cart-button" onClick={handleClearCart}>
+                    Vaciar carrito
+                </button>
+                <Link to="/checkout" className="checkout-link">
+                    Checkout
+                </Link>
+            </div>
         </div>
     );
 };

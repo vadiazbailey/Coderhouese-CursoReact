@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState, useContext } from 'react';
 import { CartContext } from '../../context/CartContext';
-import { getDoc, doc, Timestamp, addDoc, query, where } from 'firebase/firestore'; // Add Timestamp import
+import { getDoc, doc, Timestamp, addDoc, query, where, documentId } from 'firebase/firestore'; // Add Timestamp import
 import { db } from '../../services/firebase';
 import { writeBatch, collection, getDocs } from 'firebase/firestore'; // Add writeBatch, collection, and getDocs imports
 import CheckoutForm from '../CheckoutForm/CheckoutForm';
@@ -31,9 +31,7 @@ const Checkout = () => {
             const ids = cart.map(i => i.id);
             const productsRef = collection(db, 'products');
 
-            console.log(productsRef);
-
-            const productsAddedFirestore = await getDocs(query(productsRef, where('id', 'in', ids)));
+            const productsAddedFirestore = await getDocs(query(productsRef, where(documentId(), 'in', ids)));
 
             const { docs } = productsAddedFirestore;
 

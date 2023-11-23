@@ -1,0 +1,67 @@
+/* En tu archivo CSS (por ejemplo, Cart.css) */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  height: 60vh;
+  max-height: 60vh;
+  overflow-y: auto;
+  padding: 20px;
+}
+
+.cart-item {
+  margin-bottom: 20px;
+}
+
+.clear-cart-button,
+.checkout-link {
+  margin-top: 20px;
+}
+
+.empty-cart-icon {
+  font-size: 48px;
+  color: #6d4e4e;
+}
+
+.empty-cart-message {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #333;
+  text-align: center;
+}
+
+/* Estilo del enlace */
+.link-to-home {
+  margin-top: 20px;
+  text-decoration: none;
+  color: #007bff;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.link-to-home:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para el enlace de checkout */
+.checkout-link {
+  text-decoration: none;
+  color: #6d4e4e;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  border: 2px solid #7d5959;
+  padding: 8px 25px;
+  border-radius: 4px;
+  &:hover {
+    color: #4a3535;
+  }
+}
+
+.detalle {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  width: 50vw;
+}

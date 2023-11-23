@@ -3,7 +3,7 @@ import { useState } from 'react'
 import './ItemCount.css'
 
 const ItemCount = ({ stock, initial, onAdd }) => {
-    const [quantity, setQuantity] = useState(0);
+    const [quantity, setQuantity] = useState(1);
 
     const increment = () => {
         if (quantity < stock) {
@@ -28,7 +28,7 @@ const ItemCount = ({ stock, initial, onAdd }) => {
                     +
                 </button>
             </div>
-            <div>
+            <div style={{marginLeft: '2%'}}>
                 <button
                     className="add-to-cart-button"
                     onClick={() => onAdd(quantity)}

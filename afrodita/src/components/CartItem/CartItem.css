@@ -1,0 +1,105 @@
+/* CartItem.css */
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  border: 1px solid #ddd;
+  width: 50vw;
+}
+
+.cart-item-left {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.cart-item-image {
+  max-width: 100px;
+  width: 100%;
+  height: auto;
+}
+
+.cart-item-right {
+   display: flex;
+  /* justify-content: center; */
+  flex-direction: column;
+  align-content: stretch;
+  align-items: flex-start;
+}
+
+.cart-item-right p {
+  margin: 0;
+}
+
+.cart-item-controls-right {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding-left:10%;
+  padding-right: 6%;
+}
+
+.cart-item-controls {
+  margin-right: 10px;
+}
+
+.cart-item-controls input {
+  width: 50px;
+  padding: 5px;
+  box-sizing: border-box;
+}
+
+.cart-item-controls-right button {
+  background-color: #d9534f;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.cart-item-controls-right button:hover {
+  background-color: #c9302c;
+}
+/* Añade estos estilos a tu archivo CartItem.css o donde manejes los estilos del componente */
+
+.cart-item-controls {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.cart-item-controls input {
+  width: 50px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ddd; /* Borde */
+  border-radius: 4px; /* Esquinas redondeadas */
+  margin-right: 10px; /* Espaciado derecho */
+  -moz-appearance: textfield; /* Firefox */
+}
+
+.cart-item-controls .custom-arrow-up,
+.cart-item-controls .custom-arrow-down {
+  width: 0;
+  height: 0;
+  border-left: 5px solid transparent;
+  border-right: 5px solid transparent;
+  cursor: pointer;
+  position: absolute;
+  top: 50%; /* Centra verticalmente */
+  transform: translateY(-50%);
+}
+
+.cart-item-controls .custom-arrow-up {
+  border-bottom: 5px solid #6d4e4e; /* Color de las flechas hacia arriba */
+  right: 8px;
+}
+
+.cart-item-controls .custom-arrow-down {
+  border-top: 5px solid #6d4e4e; /* Color de las flechas hacia abajo */
+  right: 8px;
+}
+

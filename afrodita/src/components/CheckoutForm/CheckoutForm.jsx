@@ -85,7 +85,13 @@ const CheckoutForm = ({ onConfirm }) => {
                     Confirmar Email:
                     <input type="text" placeholder="Confirmar Email" value={confirmEmail} onChange={(e) => setConfirmEmail(e.target.value)} />
                 </label>
-                <button type="submit">Enviar</button>
+                <button
+                    type="submit"
+                    className={(email !== confirmEmail || (email === '' && confirmEmail === '')) ? 'disabled' : ''}
+                    disabled={email !== confirmEmail || (email === '' && confirmEmail === '')}
+                >                    
+                    Enviar
+                </button>
             </form>
         </div>
     );
